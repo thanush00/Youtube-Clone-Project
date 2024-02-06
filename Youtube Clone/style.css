@@ -1,0 +1,290 @@
+body{
+   padding-top: 80px;
+   padding-left: 120px;
+   padding-right: 25px; 
+   background-color: rgb(235, 235, 235);  
+}
+
+p{
+    font-family: Roboto, Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+
+}
+
+
+.thumbnail-row{
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.thumbnail{
+    width: 100%;
+}
+
+.video-time{
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 10px;
+    right: 6px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 2px;
+}
+
+.video-info-grid{
+    display:grid;
+    grid-template-columns: 50px 1fr;   
+}
+
+
+.profile{
+    border-radius: 50px;
+}
+
+.video-title{
+    font-size: 16px;
+    margin-left: 4px;
+    margin-bottom: 8px;
+
+}
+
+.channel-name, .video-views{
+    font-size: 14px;
+    color: gray;
+    margin-left: 3px;
+    margin-bottom: 4px;
+}
+
+*{
+    margin: 0;
+}
+
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(196, 196, 196);
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.first{
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.hamburger-menu{
+    height: 30px;
+    margin-left: 20px;
+}
+
+.youtube-logo{
+    height: 26px;
+    margin-left: 30px;
+}
+
+.middle{
+    display: flex;
+    flex: 1;
+    max-width: 500px;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;        
+}
+
+.input-box{
+    flex: 1;
+    height: 34px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(192,192,192);
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);        
+}
+
+.input-box::placeholder{
+
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    
+}
+
+.search-button{
+    height: 38px;
+    width: 66px;
+    margin-left: -1px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(192,192,192);
+    background-color:rgb(240,240,240) ;
+    margin-right: 10px;
+
+    position: relative;
+}
+
+.search-icon{
+    height: 25px;
+}
+
+.search-button,.voice-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.voice-button .tooltip,
+.search-button .tooltip{
+    background-color: gray;
+    padding: 6px;
+    color: white;
+    border-radius: 2px;
+    margin-top: 10px;
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0,15s;
+    
+
+    position: absolute;
+    pointer-events: none;
+    white-space: nowrap;
+
+    margin-top: 80px;
+
+    
+}
+
+.voice-button:hover .tooltip,
+.search-button:hover .tooltip{
+    opacity: 1;
+}
+
+.voice-button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: rgb(240,240,240);
+    border-radius: 20px;
+
+    position: relative;
+}
+
+
+.voice-search-icon{
+    height: 25px;
+
+}
+
+.end{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 180px;
+    justify-content: space-between;
+    margin-right: 10px;
+    
+}
+
+.upload{
+    height: 24px;
+    
+}
+
+.youtube-apps{
+    height: 24px;
+
+}
+
+.notifications-container{
+    position: relative;
+
+}
+
+.notifications{
+    height: 24px;
+    
+}
+
+.notifications-count{
+    position: absolute;
+    background-color: rgb(182, 0, 0);
+    color: white;
+    top: -5px;
+    right: -5px;
+    font-family: Robota, Arial;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+
+
+}
+
+.gmail-pic{
+    height: 24px;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center;   
+}
+
+.sidebar{
+    position: fixed;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    width: 90px;
+    background-color: white;
+    padding-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+
+.sidebar .sidebar-links{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.sidebar img {
+    width: 35px;
+}
+
+
+.sidebar div {
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
